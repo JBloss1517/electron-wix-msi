@@ -1,5 +1,4 @@
 # 4.1.0
- * Add icon extraction from exe
  * Associate extensions with exe
  * Better support for semantic version to Windows version
 # 4.0.0
