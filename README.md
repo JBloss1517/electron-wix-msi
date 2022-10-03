@@ -1,4 +1,7 @@
-![@evoleap/electron-wix-msi](.github/logo.png)
+> ## Warning: This repo is created as a temporary work around while the pull request #152 (https://github.com/felixrieseberg/electron-wix-msi/pull/152) is under review. If you do not need the features added in the pull request, it is recommended to you use the original project directly.
+> Note: This was forked from a fork to fix npm installation issues with dependencies. 
+
+![electron-wix-msi](.github/logo.png)
 
 [![Build status](https://ci.appveyor.com/api/projects/status/s54pty8rve3yemb9?svg=true)](https://ci.appveyor.com/project/felixrieseberg/electron-wix-msi)
 [![Build Status](https://travis-ci.org/felixrieseberg/electron-wix-msi.svg?branch=master)](https://travis-ci.org/felixrieseberg/electron-wix-msi)
@@ -32,7 +35,7 @@ line tools are required. If you are using AppVeyor or another Windows CI system,
 it is likely already installed.
 
 ```
-npm i --save-dev @evoleap/electron-wix-msi
+npm i --save-dev git+https://github.com/JBloss1517/electron-wix-msi.git
 ```
 
 ## Whats new?
@@ -79,7 +82,7 @@ Your App will now also have a shortcut on the Desktop.
 Creating an installer is a three-step process:
 
 ``` js
-import { MSICreator } from '@evoleap/electron-wix-msi';
+import { MSICreator } from 'electron-wix-msi';
 
 // Step 1: Instantiate the MSICreator
 const msiCreator = new MSICreator({
